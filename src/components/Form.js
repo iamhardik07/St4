@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Cricketers from './Cricketers';
+import Football from './Football';
 import './Form.css';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     let a = position, b = player, c = rating, d = playerstate;
-    Cricketers.push({ a, b, c, d});
+    Football.push({ a, b, c, d});
     // console.log(Cricketers);
     history('/added');
 
